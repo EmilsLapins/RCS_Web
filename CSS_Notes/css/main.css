@@ -1,0 +1,116 @@
+
+#firstPara{
+    color: rgb(14, 230, 14);  
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-weight: 500;
+    font-style: italic; 
+    text-decoration: line-through black;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    
+}  
+#firstPara:hover{
+    text-decoration: underline;
+    color: pink;
+}
+
+.greenPara {
+    color: green;
+
+}
+
+p {
+    color:red;
+}
+
+span{
+    color:rgb(21, 212, 95);
+}
+
+input{
+    border-color: rgb(226, 70, 43);
+    border-width: 5px;
+    border-style: dashed ;
+    border-radius: 2px;
+    width: 100px;
+    height: 100px;
+    display: block;
+    /* border: dotted 2px #ffff00; */
+}
+div{
+    height: 100px;
+    width: 100px;
+    background: chartreuse;
+    text-align: center;
+    line-height: 100px; 
+    overflow: hidden;
+    padding: 20px;
+    border: 2px solid black;
+    border-top-width: 10px;
+    margin: 30px;
+    float: right;
+
+}
+
+popup{
+    background: red;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: 0px;
+    margin-left: -50px;
+    margin-top: -50px;
+    
+}
+
+.popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: 0px;
+    margin-left: -50px;
+    margin-top: -50px;
+}
+
+#popup1{
+    background: rgba(255, 255, 0, 1);
+    z-index: 2;
+    opacity: 0.5;
+}
+#popup2{
+    background: blueviolet;
+    margin-left: -10px;
+    margin-top: -100px;
+    z-index: 1;
+
+}
+#popup3{
+    background: darkcyan;
+    margin-left: -100px;
+    margin-top: -0px;
+    z-index: 3;
+    opacity: 0.3;
+}
+
+#popup4{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(66, 7, 7, 0.747)!important;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    top:0px;
+    left:0px;
+
+}
+
+#popup4 img{
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
