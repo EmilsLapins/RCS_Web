@@ -33,6 +33,6 @@ p strong{
 [data-foo~="bar"]{
     color: violet;
 }
-.super-strange-paragraph span:hover {
+.super-strange-paragraph:hover span {
 color: red;
 }
