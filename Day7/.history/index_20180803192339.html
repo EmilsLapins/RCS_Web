@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Vue JS stuff</title>
+    <style>
+        .is-completed {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="task in tasks">
+                <span v-on:click="task.done = !task.done" :class="[task.done ? 'is-completed' : '']">
+                    {{ task.content }}
+                </span>
+                <button v-if="task.done" v-on:click="removeTask(task)">
+                    Delete
+                </button>
+            </li>
+        </ul>
+
+
+
+
+
+
+        <hr>
+
+
+
+
+        <div>
+            <label for="task-content">
+                new task content
+            </label>
+
+        </div>
+        <div>
+            <input id="task-content" v-model="newTaskContent">
+        </div>
+        <div>
+            <button>Add new task</button>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

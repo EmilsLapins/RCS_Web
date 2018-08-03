@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery TODO</title>
+    <style>
+
+        #tasks li {
+            cursor: pointer;
+        }
+        #tasks li.line-through {
+            text-decoration: line-through;
+        }
+        #tasks li .delete-item{
+            display: none;
+        }
+        #tasks li.line-through .delete-item{
+            display: inline;
+            text-decoration: none!;
+        }
+    </style>
+</head>
+<body>
+    <ul id="tasks">
+        
+    </ul>
+
+    <hr>
+
+    <div>
+        <label for="task-title">Uzdevuma nosaukums</label>
+    </div>
+<div>
+    <input type="text" id="task-title">
+</div>
+
+<div>
+    <button id="save-task">Pievienot</button>
+</div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+   
+</body>
+</html>
